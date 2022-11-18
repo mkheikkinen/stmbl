@@ -1,0 +1,40 @@
+link pid
+link pmsm
+link res_fb0
+link jog_cmd
+link misc
+conf0.r = 3.529383
+conf0.l = 0.037646
+conf0.polecount = 3.000000
+conf0.mot_fb_offset = 2.263212
+conf0.out_rev = 1
+conf0.psi = 0.100525
+conf0.j = 0.000276 
+conf0.o = -0.000761 
+conf0.d = 0.000642 
+conf0.f = 0.062302
+conf0.j_sys = 0.000005
+conf0.o = 0.000615
+conf0.d = 0.000503
+conf0.f = 0.062950
+conf0.pos_bw = 16.505634
+conf0.vel_bw = 124.009277
+conf0.vel_d = 6.664391
+
+load ramp
+ramp0.rt_prio = 1.950000
+ramp0.vel_ext_cmd = 0
+ramp0.en = 1.000000
+ramp0.scale = 100.000000
+ramp0.max_vel = 30.000000
+ramp0.max_acc = 0.100000
+ramp0.at_speed_th = 0.010000
+ramp0.vel_cmd = 10.000000
+ramp0.at_speed = 1.000000
+ramp0.en_out = 1.000000
+ramp0.en_timer = 0.250000
+ramp0.en_delay = 0.250000
+ramp0.max_acc = 0.010000
+ramp0.vel_ext_cmd = 0.000000
+
+term0.wave4 = ramp0.vel_cmd
