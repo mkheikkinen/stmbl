@@ -6,7 +6,7 @@ loadrt hostmot2
 
 #loadrt hm2_rpspi config=" num_encoders=0 num_pwmgens=1 num_stepgens=5 sserial_port_0=0xxxxx"
 loadrt hm2_rpspi config=" num_encoders=0 num_pwmgens=1 num_stepgens=5 sserial_port_0=11111111"
-setp    hm2_7c80.0.watchdog.timeout_ns 5000000
+setp    hm2_7c80.0.watchdog.timeout_ns 50000000
 
 loadrt estop_latch
 

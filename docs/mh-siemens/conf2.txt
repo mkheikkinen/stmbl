@@ -1,0 +1,27 @@
+link pid
+link pmsm
+link res_fb0
+link misc
+link sserial
+
+conf0.r = 3.557289
+conf0.l = 0.037050
+conf0.polecount = 3.000000
+conf0.mot_fb_offset = 2.247187
+conf0.out_rev = 1
+conf0.psi = 0.100062
+
+conf0.j = 0.000262
+conf0.o = 0.000561 
+conf0.d = 0.001416 
+conf0.f = 0.061245 
+
+conf0.j_sys = 0.000005 
+conf0.o = -0.002192 
+conf0.d = 0.001372 
+conf0.f = 0.062076
+
+conf0.pos_bw = 13.641020
+conf0.vel_bw = 150.051239
+conf0.vel_d = 3.761874
+
