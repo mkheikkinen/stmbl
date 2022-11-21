@@ -1,0 +1,32 @@
+link pid
+link pmsm
+link res_fb0
+#link jog_cmd
+link misc
+#link id_pid
+link sserial
+
+sserial0.scale = 5.000000
+
+#elect
+conf0.r = 3.526595
+conf0.l = 0.041457
+conf0.polecount = 3.000000
+conf0.mot_fb_offset = 2.261810
+conf0.out_rev = 1
+#conf0.psi = 0.099544
+
+#mech
+conf0.j = 0.000239
+conf0.o = -0.000384
+conf0.d = 0.001331
+conf0.f = 0.055350
+
+#pid
+conf0.pos_bw = 16.505634 # append to config
+conf0.vel_bw = 102.487000 # append to config
+conf0.vel_d = 4.138062 n'># append to config
+
+conf0.max_ac_cur = 2.000000
+conf0.max_pos_error = 100.000000
+
