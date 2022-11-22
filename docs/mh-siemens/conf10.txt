@@ -1,0 +1,56 @@
+link pid
+link pmsm
+link res_fb0
+link jog_cmd
+link misc
+#link id_pid
+
+conf0.r = 3.542540
+conf0.l = 0.038838
+conf0.polecount = 3.000000
+conf0.mot_fb_offset = 2.266618
+conf0.out_rev = 1
+conf0.psi = 0.3
+conf0.psi = 0.102150
+
+
+# Mot
+#conf0.j = 0.000286
+conf0.j = 0.000200
+conf0.o = 0.001193
+conf0.d = 0.001081
+conf0.f = 0.060981
+
+
+#sys
+#conf0.j_sys = 0.000006
+#conf0.o = 0.006957
+#conf0.d = 0.001350
+#conf0.f = 0.056344
+
+#pid
+conf0.pos_bw = 9.317000
+conf0.vel_bw = 165.056366
+conf0.vel_d = 3.419885
+
+link sserial
+sserial0.scale = 5.000000
+
+#conf0.max_pos_error = 150.00000
+conf0.max_ac_cur = 3.000000
+
+
+
+#Bypass tracking
+sserial0.pos_fb = sserial0.pos_cmd
+
+#constant velocity mode
+load mux
+mux0.rt_prio = 2
+
+rev0.in = mux0.out0
+mux0.in0=vel_int0.pos_out
+mux0.in10=sim0.vel
+mux0.mux=sserial0.out0
+
+conf0.max_pos_error = 100.000000
