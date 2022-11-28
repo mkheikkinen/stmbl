@@ -1,0 +1,22 @@
+    36  float OUT             0  hm2_7c80.0.stbl.0.0.current
+    36  bit   IN          FALSE  hm2_7c80.0.stbl.0.0.enable <== cenable
+    36  bit   OUT         FALSE  hm2_7c80.0.stbl.0.0.fault ==> cfault
+    36  bit   OUT          TRUE  hm2_7c80.0.stbl.0.0.fault-not
+    36  bit   OUT         FALSE  hm2_7c80.0.stbl.0.0.in-00
+    36  bit   OUT          TRUE  hm2_7c80.0.stbl.0.0.in-00-not
+    36  bit   OUT         FALSE  hm2_7c80.0.stbl.0.0.in-01
+    36  bit   OUT          TRUE  hm2_7c80.0.stbl.0.0.in-01-not
+    36  bit   OUT         FALSE  hm2_7c80.0.stbl.0.0.in-02
+    36  bit   OUT          TRUE  hm2_7c80.0.stbl.0.0.in-02-not
+    36  bit   OUT         FALSE  hm2_7c80.0.stbl.0.0.in-03
+    36  bit   OUT          TRUE  hm2_7c80.0.stbl.0.0.in-03-not
+    36  bit   I/O         FALSE  hm2_7c80.0.stbl.0.0.index_enable
+    36  bit   IN          FALSE  hm2_7c80.0.stbl.0.0.out-00
+    36  bit   IN          FALSE  hm2_7c80.0.stbl.0.0.out-01
+    36  bit   IN          FALSE  hm2_7c80.0.stbl.0.0.out-02
+    36  bit   IN          FALSE  hm2_7c80.0.stbl.0.0.out-03
+    36  float IN       17.34761  hm2_7c80.0.stbl.0.0.pos_cmd <== cposcmd
+    36  float OUT      17.34761  hm2_7c80.0.stbl.0.0.pos_fb ==> cposfb
+    36  float IN              0  hm2_7c80.0.stbl.0.0.vel_cmd <== cvelcmd
+    36  float OUT             0  hm2_7c80.0.stbl.0.0.vel_fb
+

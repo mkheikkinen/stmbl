@@ -143,6 +143,9 @@ int main() {
   metadata(&(pd_table.pos_cmd), last_pd);
   ADD_PROCESS_VAR(("vel_cmd", "rad", 32, DATA_TYPE_FLOAT, DATA_DIRECTION_OUTPUT, -INFINITY, INFINITY));
   metadata(&(pd_table.vel_cmd), last_pd);
+  ADD_PROCESS_VAR(("speed_cmd", "rad", 32, DATA_TYPE_FLOAT, DATA_DIRECTION_OUTPUT, -INFINITY, INFINITY));
+  metadata(&(pd_table.speed_cmd), last_pd);
+ 
   ADD_PROCESS_VAR(("out", "none", 4, DATA_TYPE_BITS, DATA_DIRECTION_OUTPUT, 0, 1));
   metadata(&(pd_table.output_pins), last_pd);
   ADD_PROCESS_VAR(("enable", "none", 1, DATA_TYPE_BOOLEAN, DATA_DIRECTION_OUTPUT, 0, 1));
@@ -152,6 +155,9 @@ int main() {
   metadata(&(pd_table.pos_fb), last_pd);
   ADD_PROCESS_VAR(("vel_fb", "rad", 32, DATA_TYPE_FLOAT, DATA_DIRECTION_INPUT, -INFINITY, INFINITY));
   metadata(&(pd_table.vel_fb), last_pd);
+  ADD_PROCESS_VAR(("speed_fb", "rad", 32, DATA_TYPE_FLOAT, DATA_DIRECTION_INPUT, -INFINITY, INFINITY));
+  metadata(&(pd_table.speed_fb), last_pd);
+
   ADD_PROCESS_VAR(("current", "A", 8, DATA_TYPE_SIGNED, DATA_DIRECTION_INPUT, -30, 30));
   metadata(&(pd_table.current), last_pd);
   ADD_PROCESS_VAR(("in", "none", 4, DATA_TYPE_BITS, DATA_DIRECTION_INPUT, -100, 100));
